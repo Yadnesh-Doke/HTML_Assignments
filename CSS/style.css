@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+   /* padding-top:34px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top:34px;
+}
+
+.logo{
+   /* border:1px solid red;*/
+}
+
+.header-contents{
+    
+   /* border:1px solid green;
+   line-height:120px;
+   vertical-align: middle;*/
+}
+
+
+header,footer{
+    height:120px;
+}
+
+.menu{
+    height: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: black;
+    width:100%;
+}
+
+#menudiv{
+    width:38px;
+    height:24px;
+    float:right;
+}
+
+#nav-menu-list{
+    list-style-type:none;
+    
+}
+
+.menu-item{
+    display:inline;
+}
+
+.nav-menu-contents{
+    float:right;
+    margin-right:40px;
+}
+
+#breath{
+    margin-right:10px;
+}
+
+#orange{
+    color:tomato;
+}
+
+.bck-img{
+    height:870px;
+    border:1px solid violet;
+    background-image: url("../images/banner_bg.jpg");
+    margin-bottom:70px;
+}
+
+.content-on-img{
+    width:1000px;
+    height:870px;    
+    /* border:1px solid red; */
+    margin:auto;
+}
+
+#mountain{
+    /* border:2px solid green; */
+    margin-top:299px;  
+    /* display: inline-block; */
+    vertical-align:middle;
+}
+
+h3{
+    font-family: "Open Sans";
+    font-size: 40px;
+    color:white;
+}
+
+.small-btn{
+    height:48px;
+    
+}
+
+.btn{
+    background-color: tomato;
+    border-radius: 20px;
+    color:white;
+    font-family: "Open Sans";
+    padding:5px 35px;
+    font-size: 20px;
+}
+
+.middle{
+    height:560px;
+    padding:0px 30px 0px 30px;
+    border:2px dotted violet;
+}
+
+.cards{
+    width:433px;
+    height:556px;
+    border:2px dotted violet;
+}
