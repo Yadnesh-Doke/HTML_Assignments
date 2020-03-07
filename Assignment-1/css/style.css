@@ -11,39 +11,41 @@ body{
 header{
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 33px;
     position:fixed;
     width:100%;
     background-color: white;
     top:0px;
     z-index:1;
+    
 }
+
 section{
-    margin:70px auto;
-    width:1300px;
+    padding:70px 0px;
+    margin:0px auto;
+    width:1200px;
 }
 
-.header-contents{
-   position:relative;
-   top:50%;
-   transform:translateY(-50%);
+.clear{
+    clear:both;
 }
-
 
 header,footer{
-    height:120px;
+    height:120px;   
 }
 
 .menu{
-    height: 4px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    height: 3px;
     background-color: black;
-    width:100%;
+    width: 100%;
 }
 
 #menudiv{
     width:38px;
     height:24px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    padding:9px 0;
     float:right;
 }
 
@@ -69,6 +71,7 @@ header,footer{
 
 .black-link{
     color:black;
+    text-decoration: none;
 }
 #breath{
     margin-right:10px;
@@ -90,23 +93,21 @@ header,footer{
 }
 
 .content-on-img{
-    width:1300px;
+    width:1200px;
     height:870px;    
     margin:auto;
+    position:relative;
 }
 
-#mountain{
-    position:relative;
+.mountain{
+    position:absolute;
     top:50%;
     transform: translateY(-50%);
 }
-
-h3{
-    font-family: "Open Sans";
-    font-size: 40px;
+.mountain h3{
     color:white;
+    font-size:40px;
 }
-
 .small-btn{
     height:48px;
 }
@@ -118,47 +119,80 @@ h3{
     font-family: "Open Sans";
     padding:3px 65px;
     font-size: 20px;
+    border:none;
 }
 
-.middle{
+/* .middle{
     height:560px;
     width:auto;
-    padding:0px 30px 0px 30px;
+    padding-left:60px;
+    padding-right:60px;
+    background-color: violet;
+} */
+.middle{
+    padding-left:60px;
+    padding-right:60px;
+    /* background-color: violet; */
+    width:100%;
 }
 
+.wrapper{
+margin:0px -15px;
+}
+.column{
+    width:25%;
+    padding:0px 15px;
+    float:left;
+}
 .cards{
-    width:433px;
+    width:100%;
     height:556px;
     background-image: url("../images/trail_card_bg.png");
     position:relative;
-    margin:0 15px;
-    display:inline-block;
 }
 
 .bookmark{
     position:absolute;
-    right:25px;
+    right:20px;
+    top:-5px;
 }
 
 .content-on-card{
     position:relative;
     top:50%;
     transform:translateY(-50%);
-    margin:0 50px;
+    margin:0 35px;
     color:white;
 }
 
 .heading-on-card{
     font-size:22px;
+    margin-bottom:20px;
+    float:left;
 }
 
-.para-on-card{
+.blockqoute-on-card{
     font-size:18px;
     margin-bottom:60px;
 }
-
+.no-readmore{
+    margin-bottom:75px;
+}
+.para-on-card{
+    margin-left:29px;
+}
+.numeric{
+    margin-right:8px;
+    font-size:22px;
+    float:left;
+}
 .read-more{
     font-size:15px;
+    
+}
+.no-img{
+    background-image: none;
+    color:black;
 }
 
 .content-on-card a{
@@ -166,7 +200,7 @@ h3{
     color:white;
 }
 
- .no-bck-img{
+ /* .no-bck-img{
     background-image: none;
     color:black;
     width:433px;
@@ -174,7 +208,7 @@ h3{
     margin:0 15px;
     display:inline-block;
     
- }
+ } */
 
  .no-bck-img h3{
     color:black;
@@ -194,6 +228,12 @@ h3{
      width:680px;
      position:relative;
      margin:0 auto;
+     line-height: 48px;
+     padding-left:20px;
+ }
+ .adjust{
+    /* line-height: 3px; */
+    vertical-align: middle;
  }
  #newsl-div p{
     position:absolute;
@@ -210,10 +250,19 @@ h3{
     display:inline-block;
 }
 
+.form-subs-input{
+    float:left;
+    border:none;
+    width:50%;
+    padding:22px 5px;
+    height:40px;
+}
+.form-subs-btn{
+    float:right;
+}
+
 .newsletter{
-    width:1300px;
-    /* margin:0 auto; */
-    /* border-bottom:2px solid black; */
+    width:1200px;
 }
 
 legend{
@@ -221,25 +270,26 @@ legend{
 }
 
 .news{
-
-    width:1300px;
+    width:100%px;
     margin-bottom:60px;
-    position:relative;
+    /* position:relative; */
 }
 .img-placeholder{
-    width:680px;
+    width:635px;
     height:452px;
     background-color:rgb(58, 55, 55);
     margin-right:20px;
+    float:left;
     /* display:inline-block; */
 }
 
 .news-content{
     /* display:inline-block; */
-    width:570px;
-    position:absolute;
+    width:517px;
+    /* position:absolute;
     right:0px;
-    top:0px;
+    top:0px; */
+    float:right;
 }
 
 .timestamp{
@@ -253,6 +303,12 @@ legend{
 .timestamp ul{
     list-style:none;
 }
+.timestamp p{
+    margin-right:8px;
+}
+.ul-content{
+    margin-left:8px;
+}
 #orange-bullet::before{
     content: "\2022";  
   color: red; 
@@ -262,10 +318,16 @@ legend{
 }
 #news-heading{
     border-bottom:2px solid #D1D1D1 ;
+    padding: 30px 0;
 }
 
 .news-content p,a{
     font-size:18px;
+}
+
+.para-onnews{
+    margin:20px 0px;
+    /* font-size:18px; */
 }
 .orange-links{
     text-align:center;
@@ -274,12 +336,18 @@ legend{
 .orange-links a{
     color:tomato;
     font-size:22px;
-    
+    text-decoration: none;
+}
+.contact-me{
+    font-size:18px;
+    text-align:center;
+    color:tomato;
+    margin-bottom:60px;
 }
 
 .hr-line{
     margin:0px 40px;
-    border: 1px solid #587431;
+    border-top: 1px solid #587431;
     margin-bottom:70px;
 }
 
@@ -290,28 +358,26 @@ legend{
     font-size:40px;
 }
 
-.contact-form{
-    /* border:1px solid red; */
-}
-
 #form{
-    /* border:1px solid brown; */
     margin:60px auto;
-    /* width:inherit; */
 }
 
 .form-inputs{
-    width:625px;
+    width:577px;
     height:88px;
     margin-bottom:50px;
    /* margin-right:50px; */
     font-size:18px;
     border-radius: 6px;
+    padding-left: 15px;
     border:1px solid black;
 }
-
+.left-side-input {
+    float: left;
+}
 .right-side-input{
-    margin-left:42px;
+    /* margin-left:42px; */
+    float:right;
 }
 
 textarea{
@@ -320,13 +386,130 @@ textarea{
     border-radius: 6px;
     margin-bottom:60px;
     font-size:18px;
+    padding: 25px 0px 0px 20px;
     border:1px solid black;
 }
-
 .Large-btn{
     height:60px;
 }
-
 #form-button{
     text-align:center;
+}
+
+.join-team-title{
+    font-size:26px;
+    margin-bottom:20px;
+}
+.team-members{
+    margin-bottom:40px;
+}
+.book-img{
+    width:40px;
+    height:41px;
+}
+.member1{
+    height:280px;
+    background-image: url("../images/member_01.png");
+}
+.member2{
+    height:280px;
+    background-image: url("../images/member_02.png");
+}
+.member3{
+    height:280px;
+    background-image: url("../images/member_03.png");
+}
+.member4{
+    height:280px;
+    background-image: url("../images/member_04.png");
+}
+.member5{
+    height:280px;
+    background-image: url("../images/member_05.png");
+}
+
+.member6{
+    height:280px;
+    /* line-height:280px; */
+    background-image: url("../images/trail_card_bg.png");
+}
+
+.member-bookmark{
+    right:15px;
+    width:40px;
+    height:41px;
+}
+
+.your-place{
+    text-align:center;
+    color:white;
+    padding: 88px 0px;
+}
+.card-title{
+    font-size:22px;
+    margin-bottom:40px;
+}
+.join-us-link{
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+}
+
+.join-us{
+    height:280px; 
+    padding:25px;
+}
+
+.join-card-title{
+    font-size:22px;
+    margin-bottom:20px;
+}
+.card-para{
+    font-size:18px;
+}
+
+footer{
+    width:100%;
+    height:200px;
+    background-color:  #587431;
+    padding:50px 60px;
+    position:relative;
+}
+
+.footer-title{
+    font-size:22px;
+    color:white;
+    margin-bottom:10px;
+}
+.footer-text{
+    font-size: 18px;
+    color:white;
+}
+
+.useful-links{
+    text-align:left;
+    float:right;
+}
+
+.footer-links{
+    font-style: italic;
+}
+.contact{
+    /* display:inline-block; */
+    padding: 0px 40px;
+    float:left;
+}
+.contact-address{
+    /* display:inline-block; */
+    padding: 0px 45px;
+    float:left;
+}
+.contact-info{
+    position:absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+.only-text-footer{
+    margin-top:32px;
 }
