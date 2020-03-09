@@ -7,7 +7,9 @@ body{
     padding:0px;
 }
 
-
+.shadow{
+    box-shadow: 2px 2px 17px #b9b8b8;
+}
 header{
     padding-left: 60px;
     padding-right: 60px;
@@ -16,10 +18,13 @@ header{
     width:100%;
     background-color: white;
     top:0px;
-    z-index:1;
-    
+    z-index:1;  
 }
 
+.header-right{
+    float: right;
+    margin-top: 11px;
+}
 section{
     padding:70px 0px;
     margin:0px auto;
@@ -30,12 +35,13 @@ section{
     clear:both;
 }
 
+
 header,footer{
     height:120px;   
 }
 
 .menu{
-    height: 3px;
+    height: 2px;
     background-color: black;
     width: 100%;
 }
@@ -60,6 +66,9 @@ header,footer{
 .nav-menu-contents{
     float:right;
     margin-right:40px;
+    font-size: 18px;
+    margin-top:5px;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-menu-contents a{
     text-decoration: none;
@@ -78,7 +87,7 @@ header,footer{
 }
 
 #orange{
-    color:tomato;
+    color:#FF8B74;
 }
 
 .bck-img{
@@ -107,13 +116,17 @@ header,footer{
 .mountain h3{
     color:white;
     font-size:40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    margin: 35px 0px;
 }
 .small-btn{
     height:48px;
 }
 
 .btn{
-    background-color: tomato;
+    background-color: #FF8B74;
     border-radius: 40px;
     color:white;
     font-family: "Open Sans";
@@ -146,7 +159,7 @@ margin:0px -15px;
 }
 .cards{
     width:100%;
-    height:556px;
+    height:480px;
     background-image: url("../images/trail_card_bg.png");
     position:relative;
 }
@@ -167,29 +180,54 @@ margin:0px -15px;
 
 .heading-on-card{
     font-size:22px;
-    margin-bottom:20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom:25px;
+    /* line-height:27px; */
+    /* float:left;  */
+}
+
+.main-content{
     float:left;
+    background-color: yellowgreen;
+    line-height:27px;
+}
+
+.main-content p{
+    font-size:18px;
+    margin-bottom:60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    /* line-height:2px; */
+}
+.heading-on-card a{
+    font-size:15px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    text-decoration: none;
 }
 
 .blockqoute-on-card{
     font-size:18px;
     margin-bottom:60px;
+    margin-left:29px;
 }
 .no-readmore{
     margin-bottom:75px;
 }
-.para-on-card{
+/* .para-on-card{
     margin-left:29px;
-}
+} */
 .numeric{
     margin-right:8px;
     font-size:22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     float:left;
 }
-.read-more{
-    font-size:15px;
-    
-}
+/* .read-more{
+    font-size:15px; 
+} */
 .no-img{
     background-image: none;
     color:black;
@@ -199,7 +237,10 @@ margin:0px -15px;
     text-decoration: none;
     color:white;
 }
-
+.no-bck-img{
+    float:right;
+    color:black;
+}
  /* .no-bck-img{
     background-image: none;
     color:black;
@@ -213,7 +254,7 @@ margin:0px -15px;
  .no-bck-img h3{
     color:black;
  }
- .no-bck-img blockquote{
+ .no-bck-img p{
     color:black;
  }
  
@@ -223,7 +264,7 @@ margin:0px -15px;
 
  #newsl-div{
      height:48px;
-     border:1px solid tomato;
+     border:1px solid #FF8B74;
      border-radius:40px;
      width:680px;
      position:relative;
@@ -253,12 +294,15 @@ margin:0px -15px;
 .form-subs-input{
     float:left;
     border:none;
-    width:50%;
-    padding:22px 5px;
-    height:40px;
+    width:70%;
+    padding:0 8px;
+    height: 44px;
+    margin: 1px 0;
+    font-size:22px;
 }
 .form-subs-btn{
     float:right;
+    height: 47px;
 }
 
 .newsletter{
@@ -272,49 +316,53 @@ legend{
 .news{
     width:100%px;
     margin-bottom:60px;
-    /* position:relative; */
 }
 .img-placeholder{
-    width:635px;
+    width:53%;
     height:452px;
     background-color:rgb(58, 55, 55);
     margin-right:20px;
     float:left;
-    /* display:inline-block; */
 }
 
 .news-content{
-    /* display:inline-block; */
-    width:517px;
-    /* position:absolute;
-    right:0px;
-    top:0px; */
+    width:43%;
     float:right;
 }
 
 .timestamp{
     display:inline-block;
     font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
 }
 
-.timestamp p,ul{
-    display:inline-block
+.timestamp-details{
+    display:inline-block;
+     margin-right:12px;
+    /* margin-left:8px; */
 }
-.timestamp ul{
-    list-style:none;
-}
-.timestamp p{
-    margin-right:8px;
-}
-.ul-content{
-    margin-left:8px;
-}
-#orange-bullet::before{
+
+.timestamp-details::before{
     content: "\2022";  
-  color: red; 
+  color: red;
 }
+
+.timestamp-ul :first-child{
+    /* margin-left:-8px; */
+    list-style:none;
+    /* margin-left:0px; */
+}
+
+.ul-content{
+    margin-right:8px;
+    display:inline-block;
+}
+
 .news-content h2{
     font-size:48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
 }
 #news-heading{
     border-bottom:2px solid #D1D1D1 ;
@@ -329,33 +377,42 @@ legend{
     margin:20px 0px;
     /* font-size:18px; */
 }
+.news-black-link{
+    color:black;
+    text-decoration: none;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+}
 .orange-links{
     text-align:center;
     margin-bottom:60px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 }
 .orange-links a{
-    color:tomato;
+    color:#FF8B74;
     font-size:22px;
     text-decoration: none;
 }
 .contact-me{
     font-size:18px;
     text-align:center;
-    color:tomato;
+    color:#FF8B74;
     margin-bottom:60px;
 }
 
 .hr-line{
-    margin:0px 40px;
+    margin:0px 60px;
     border-top: 1px solid #587431;
     margin-bottom:70px;
 }
 
 #form-title{
     text-align:center;
-}
-#form-title p{
     font-size:40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 #form{
@@ -399,6 +456,7 @@ textarea{
 .join-team-title{
     font-size:26px;
     margin-bottom:20px;
+    font-family: 'Roboto', sans-serif;
 }
 .team-members{
     margin-bottom:40px;
@@ -448,6 +506,7 @@ textarea{
 .card-title{
     font-size:22px;
     margin-bottom:40px;
+    font-family: 'Open Sans', sans-serif;
 }
 .join-us-link{
     text-decoration: none;
@@ -463,16 +522,19 @@ textarea{
 .join-card-title{
     font-size:22px;
     margin-bottom:20px;
+    font-family: 'Open Sans', sans-serif;
 }
 .card-para{
     font-size:18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer{
     width:100%;
     height:200px;
     background-color:  #587431;
-    padding:50px 60px;
+    /* padding:50px 60px; */
+    padding: 61px 60px 0px;
     position:relative;
 }
 
@@ -480,6 +542,7 @@ footer{
     font-size:22px;
     color:white;
     margin-bottom:10px;
+    font-family: 'Open Sans', sans-serif;
 }
 .footer-text{
     font-size: 18px;
@@ -496,13 +559,18 @@ footer{
 }
 .contact{
     /* display:inline-block; */
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
     float:left;
+    /* padding-right:40px; */
 }
 .contact-address{
     /* display:inline-block; */
-    padding: 0px 45px;
+    /* padding: 0px 40px; */
+    /* padding-right:40px; */
     float:left;
+}
+.contact-padding{
+    padding-right:80px;
 }
 .contact-info{
     position:absolute;
@@ -510,6 +578,6 @@ footer{
     top: 50px;
     transform: translateX(-50%);
 }
-.only-text-footer{
+/* .only-text-footer{
     margin-top:32px;
-}
+} */
