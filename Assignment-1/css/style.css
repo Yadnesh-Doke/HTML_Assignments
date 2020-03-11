@@ -23,7 +23,7 @@ header{
 
 .header-right{
     float: right;
-    margin-top: 11px;
+    margin-top: 15px;
 }
 section{
     padding:70px 0px;
@@ -82,11 +82,11 @@ header,footer{
     color:black;
     text-decoration: none;
 }
-#breath{
+.breath{
     margin-right:10px;
 }
 
-#orange{
+.orange{
     color:#FF8B74;
 }
 
@@ -118,8 +118,8 @@ header,footer{
     font-size:40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    line-height: 2;
-    margin: 35px 0px;
+    line-height: 55px;
+    margin: 45px 0px;
 }
 .small-btn{
     height:48px;
@@ -129,23 +129,16 @@ header,footer{
     background-color: #FF8B74;
     border-radius: 40px;
     color:white;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     padding:3px 65px;
-    font-size: 20px;
+    font-size: 22px;
     border:none;
 }
 
-/* .middle{
-    height:560px;
-    width:auto;
-    padding-left:60px;
-    padding-right:60px;
-    background-color: violet;
-} */
 .middle{
     padding-left:60px;
     padding-right:60px;
-    /* background-color: violet; */
     width:100%;
 }
 
@@ -159,7 +152,7 @@ margin:0px -15px;
 }
 .cards{
     width:100%;
-    height:480px;
+    height:520px;
     background-image: url("../images/trail_card_bg.png");
     position:relative;
     padding-top: 125px;
@@ -173,8 +166,6 @@ margin:0px -15px;
 
 .content-on-card{
     position:relative;
-    /* top:50%;
-    transform:translateY(-50%); */
     margin:0 35px;
     color:white;
     padding-left:45px;
@@ -185,8 +176,6 @@ margin:0px -15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom:25px;
-    /* line-height:27px; */
-    /* float:left;  */
 }
 
 .main-content{
@@ -195,10 +184,10 @@ margin:0px -15px;
 
 .main-content p{
     font-size:18px;
-    margin-bottom:60px;
+    margin-bottom:40px;
     font-family: 'Open Sans', sans-serif;
     font-weight:300;
-    /* line-height:2px; */
+    line-height:30px;
 }
 .heading-on-card a{
     font-size:15px; 
@@ -215,15 +204,8 @@ margin:0px -15px;
 .no-readmore{
     margin-bottom:75px;
 }
-/* .para-on-card{
-    margin-left:29px;
-} */
+
 .numeric{
-    /* margin-right:8px;
-    font-size:22px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    float:left; */
     margin-right: 8px;
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
@@ -233,9 +215,7 @@ margin:0px -15px;
     position: absolute;
     float: left;
 }
-/* .read-more{
-    font-size:15px; 
-} */
+
 .no-img{
     background-image: none;
     color:black;
@@ -244,20 +224,14 @@ margin:0px -15px;
 .content-on-card a{
     text-decoration: none;
     color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:15px;
 }
 .no-bck-img{
     float:right;
     color:black;
 }
- /* .no-bck-img{
-    background-image: none;
-    color:black;
-    width:433px;
-    height:556px;
-    margin:0 15px;
-    display:inline-block;
-    
- } */
 
  .no-bck-img h3{
     color:black;
@@ -265,12 +239,8 @@ margin:0px -15px;
  .no-bck-img p{
     color:black;
  }
- 
- /* .subs-newsletter{
-    border: 2px solid black;
- } */
 
- #newsl-div{
+ .newsl-div{
      height:48px;
      border:1px solid #FF8B74;
      border-radius:40px;
@@ -281,17 +251,16 @@ margin:0px -15px;
      padding-left:20px;
  }
  .adjust{
-    /* line-height: 3px; */
     vertical-align: middle;
  }
- #newsl-div p{
+ .newsl-div p{
     position:absolute;
     margin-left:10px; 
     font-size:22px;
     display:inline-block;
 }
 
-#newsl-div button{
+.newsl-div button{
     position:absolute;
     right:0px;
     top:50%;
@@ -302,7 +271,7 @@ margin:0px -15px;
 .form-subs-input{
     float:left;
     border:none;
-    width:70%;
+    width:60%;
     padding:0 8px;
     height: 44px;
     margin: 1px 0;
@@ -319,6 +288,9 @@ margin:0px -15px;
 
 legend{
     font-size:22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .news{
@@ -364,19 +336,17 @@ legend{
     font-size:48px;
     font-family: 'Open Sans', sans-serif;
     font-weight:700;
+    line-height: 55px;
 }
-#news-heading{
+.news-heading{
     border-bottom:2px solid #D1D1D1 ;
     padding: 30px 0;
 }
 
-.news-content p,a{
-    font-size:18px;
-}
-
 .para-onnews{
     margin:20px 0px;
-    /* font-size:18px; */
+    font-size:18px;
+    line-height: 20px;
 }
 .news-black-link{
     color:black;
@@ -388,13 +358,13 @@ legend{
 .orange-links{
     text-align:center;
     margin-bottom:60px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
 }
 .orange-links a{
-    color:#FF8B74;
-    font-size:22px;
+    color: #FF8B74;
+    font-size: 22px;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 .contact-me{
     font-size:18px;
@@ -402,6 +372,7 @@ legend{
     color:#FF8B74;
     font-family: 'Roboto', sans-serif;
     margin-bottom:60px;
+    font-weight: 500;
 }
 
 .hr-line{
@@ -410,14 +381,14 @@ legend{
     margin-bottom:70px;
 }
 
-#form-title{
+.form-title{
     text-align:center;
     font-size:40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
-#form{
+.form{
     margin:60px auto;
 }
 
@@ -425,7 +396,6 @@ legend{
     width:577px;
     height:88px;
     margin-bottom:50px;
-   /* margin-right:50px; */
     font-size:18px;
     border-radius: 6px;
     padding-left: 15px;
@@ -435,7 +405,6 @@ legend{
     float: left;
 }
 .right-side-input{
-    /* margin-left:42px; */
     float:right;
 }
 
@@ -450,8 +419,9 @@ textarea{
 }
 .Large-btn{
     height:60px;
+    padding: 3px 80px;
 }
-#form-button{
+.form-button{
     text-align:center;
 }
 
@@ -459,6 +429,7 @@ textarea{
     font-size:26px;
     margin-bottom:20px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 .team-members{
     margin-bottom:40px;
@@ -490,8 +461,8 @@ textarea{
 
 .member6{
     height:280px;
-    /* line-height:280px; */
     background-image: url("../images/trail_card_bg.png");
+    padding-top: 100px;
 }
 
 .member-bookmark{
@@ -503,17 +474,18 @@ textarea{
 .your-place{
     text-align:center;
     color:white;
-    /* padding: 88px 0px; */
 }
 .card-title{
     font-size:22px;
     margin-bottom:40px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .join-us-link{
     text-decoration: none;
     color:white;
     font-size:15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .join-us{
@@ -525,30 +497,32 @@ textarea{
     font-size:22px;
     margin-bottom:20px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .card-para{
     font-size:18px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 footer{
     width:100%;
     height:200px;
     background-color:  #587431;
-    /* padding:50px 60px; */
     padding: 61px 60px 0px;
-    /* position:relative; */
 }
 
 .footer-title{
     font-size:22px;
     color:white;
-    margin-bottom:10px;
+    margin-bottom:20px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .footer-text{
     font-size: 18px;
     color:white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .useful-links{
@@ -560,25 +534,17 @@ footer{
     font-style: italic;
 }
 .contact{
-    /* display:inline-block; */
-    /* padding: 0px 40px; */
     float:left;
-    /* padding-right:40px; */
 }
 .contact-address{
-    /* display:inline-block; */
-    /* padding: 0px 40px; */
-    /* padding-right:40px; */
     float:left;
 }
 .contact-padding{
     padding-right:80px;
 }
 .contact-info{
-    /* text-align:center;  */
      margin:0px auto;
 }
-
 
 .footer-column{
     float:left;
