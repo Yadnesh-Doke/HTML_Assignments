@@ -245,7 +245,7 @@ margin:0px -15px;
  }
 
  .newsl-div{
-     height:49px;
+     height:50px;
      border:1px solid #FF8B74;
      border-radius:40px;
      width:680px;
@@ -255,9 +255,6 @@ margin:0px -15px;
      padding-left:20px;
  }
 
- .newsl-div form{
-    height:47px;
- }
  .adjust{
     vertical-align: middle;
  }
@@ -281,7 +278,7 @@ margin:0px -15px;
     border:none;
     width:60%;
     padding:0 8px;
-    height: 44px;
+    height: 46px;
     margin: 1px 0;
     font-size:22px;
 }
@@ -421,7 +418,7 @@ textarea{
     border-radius: 6px;
     margin-bottom:60px;
     font-size:18px;
-    padding: 25px 20px 0px 20px;
+    padding: 25px 20px;
     border:1px solid #373737;
 }
 .Large-btn{
