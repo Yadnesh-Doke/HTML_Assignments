@@ -11,7 +11,8 @@ body{
 }
 
 section{
-	padding: 120px 0px;
+	/* padding: 120px 0px; */
+	margin-bottom: 120px;
 }
 
 button{
@@ -48,6 +49,10 @@ header{
 	margin-top:16px;
 }
 
+.header-links li{
+	display: inline-block;
+}
+
 .header-links a{
 	padding-left:50px;
 	font-size:16px;
@@ -60,10 +65,24 @@ header{
 }
 
 .banner{
-	padding: 96px 0px 120px;
+	/* padding: 96px 0px 120px;
 	height:717px;
 	background-color: #EFEFEF;
-	position:relative;
+	position:relative; */
+	padding: 96px 0px 0px;
+    height: 804px;
+    overflow: hidden;
+    background-color: #EFEFEF;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.banner-adjust{
+	height: 89px;
+    margin-top: 186px;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
 }
 
 .banner img{
@@ -101,11 +120,11 @@ header{
 	font-weight:300;
 	background-color: transparent;
 	border: none;
-	box-shadow: inset 0px -10px #e3aba2;
+	box-shadow: inset 0px -10px #f2d7d3;
 }
 
 .shop-now:hover{
-	box-shadow: inset 0px -10px #e68a7c;;
+	box-shadow: inset 0px -10px #e8a095;
 }
 
 .cards-menu{
@@ -126,7 +145,7 @@ header{
 }
 
 .cards-wrapper{
-	margin:0 -30px 100px;;
+	margin:0 -30px 100px;
 }
 
 .column{
@@ -140,15 +159,19 @@ header{
 .display-card{
 	height:450px;
 }
+
+.card-bottom{
+	border-bottom: 2px solid #535151;
+}
+
 .card1{
 	background-image: url("../images/product_01.png");
 	position:relative;
-	border-bottom: 2px solid #535151;
 }
 
 .item-name{
 	position:absolute;
-	bottom:1;
+	bottom:0;
 	left:15;
 	background-color: white;
 	padding:3px 25px;
@@ -157,13 +180,11 @@ header{
 .card2{
 	background-image: url("../images/product_02.png");
 	position:relative;
-	border-bottom: 2px solid #535151;
 }
 
 .card3{
 	background-image: url("../images/product_03.png");
 	position:relative;
-	border-bottom: 2px solid #535151;
 	color:white;
 }
 
@@ -193,6 +214,7 @@ header{
 
 .card3:hover .description{
 	display:block;	
+	cursor: default;
 }
 
 .card3 h3{
@@ -285,16 +307,23 @@ header{
 	margin-top: 5px;
 }
 
+/* .add button{
+	background-color: transparent;
+	border:none;
+	font-size:10px;
+	font-weight: 300;
+} */
+
 .add span{
 	margin-right:50px;
 }
 
 .info{
-	border-bottom: 1px solid #C7C7C7;
+	border-bottom: 1px solid #EFEFEF;
 }
 
 .details-border{
-	border:1px solid #C7C7C7;
+	border:1px solid #EFEFEF;
 	border-top:none;
 }
 
@@ -303,9 +332,10 @@ header{
 }
 
 .newsletter{
-	/* height:200px; */
-	background-color: #C7C7C7;
-	margin-top: 190px;
+	background-color: #EFEFEF;
+	margin-top: 304px;
+	height:300px;
+	padding-top:52px;
 }
 
 .newsletter-content{
@@ -316,14 +346,11 @@ header{
 	padding:30px;
 	text-align:center;
 	line-height: 1.7;
-	background-color: coral;
 }
 
 .subscribe-container{
-	padding:0 70px;
+	padding: 0 125px 0px 70px;
 	position:relative;
-	background-color: blueviolet;
-	/* height:600px; */
 }
 
 .user-email{
@@ -332,29 +359,123 @@ header{
 
 .user-input{
 	float:left;
+	padding:0 10px;
+	width: 418px;
+    height: 50px;
 }
 
 .subs-btn{
 	float:right;
+	padding: 0px 40px;
+    height: 50px;
+    font-size: 14px;
+	font-weight: 300;
+	color: white;
+    background-color: #222222;
 }
 
-.subscribe p{
+.subs-para{
 	font-size:14px;
 	font-weight:300;
 }
 
 .subs-title{
-	/* background-color: cornflowerblue; */
 	font-size:24px;
 	font-weight:300;
 }
 
-.subscribe span{
-	font-size:	24px;
+.subs-medium{
 	font-weight:500;
 }
 
 .subscribe-container img{
 	position: absolute;
-	top: -314px;
+	top: -238px;
+}
+
+.gallery-wrapper{
+	margin:0 -30px;
+}
+
+.gallery-card{
+	height:230px;
+	border-left:2px solid #222222;
+}
+
+.gallery-card1{
+	background-image: url("../images/gallery_1.png");
+}
+.gallery-card2{
+	background-image: url("../images/gallery_2.png");
+}
+
+.gallery-card3{
+	background-image: url("../images/gallery_3.png");
+}
+
+.gallery-content h3{
+	font-size:18px;
+	font-weight:500;
+	margin: 20px 0px;
+}
+
+.gallery-content p{
+	margin-bottom:35px;
+	line-height: 1.6;
+}
+
+.gallery-content a{
+	font-size:18px;
+	font-weight:300;
+	color: #222222;
+}
+
+.footer-links-wrapper{
+	margin:0 -10px;
+}
+
+.column-footer-links{
+	width:20%;
+	float:left;
+}
+
+.footer-link-contents{
+	margin:0 10px;
+}
+
+.footer-link-contents h3{
+	font-size:30px;
+	font-weight:500;
+	margin-bottom: 20px;
+}
+
+.footer-link-contents a{
+	font-size:16px;
+	font-weight:300;
+	color:#222222;
+}
+
+.footer-link-contents li{
+	line-height:1.7;
+}
+
+footer{
+	height:122px;
+	font-size:16px;
+	font-weight:300;
+	background-color: #EFEFEF;
+	padding-top: 49px;
+}
+
+footer li{
+	display:inline-block;
+	margin-right: 25px;
+}
+
+footer ul{
+	float:right;
+}
+
+footer a{
+	color:#222222;
 }
