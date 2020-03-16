@@ -11,7 +11,6 @@ body{
 }
 
 section{
-	/* padding: 120px 0px; */
 	margin-bottom: 120px;
 }
 
@@ -65,24 +64,16 @@ header{
 }
 
 .banner{
-	/* padding: 96px 0px 120px;
-	height:717px;
-	background-color: #EFEFEF;
-	position:relative; */
 	padding: 96px 0px 0px;
     height: 804px;
     overflow: hidden;
-    background-color: #EFEFEF;
     position: relative;
     margin-bottom: 60px;
 }
 
-.banner-adjust{
-	height: 89px;
-    margin-top: 186px;
-    background-color: white;
-    width: 100%;
-    overflow: hidden;
+.banner-wrapper{
+	background-color: #EFEFEF;
+	height:621px;
 }
 
 .banner img{
@@ -307,13 +298,6 @@ header{
 	margin-top: 5px;
 }
 
-/* .add button{
-	background-color: transparent;
-	border:none;
-	font-size:10px;
-	font-weight: 300;
-} */
-
 .add span{
 	margin-right:50px;
 }
@@ -456,7 +440,7 @@ header{
 }
 
 .footer-link-contents li{
-	line-height:1.7;
+	line-height:1.9;
 }
 
 footer{
