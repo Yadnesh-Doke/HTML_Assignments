@@ -10,19 +10,17 @@
 	<body>
 		<header>
 			<div class="container">
-				<div class="header-contents">
 					<img src="images/logo.png" alt="sello">
 
 					<div class="header-links">
 						<ul>
-							<li> <a href="#">Home</a> </li>
-							<li> <a href="#">Product</a> </li>
-							<li> <a href="#">blog</a> </li>
-							<li> <a href="#">contact</a> </li>
+							<li> <a href="#" class="active-link">Home</a> </li>
+							<li> <a href="#" class="light-links">Product</a> </li>
+							<li> <a href="#" class="light-links">blog</a> </li>
+							<li> <a href="#" class="light-links">contact</a> </li>
 						</ul>
 					</div>
 					<div class="clear"></div>
-				</div>
 			</div>
 		</header>
 
@@ -48,11 +46,11 @@
 				
 				<div class="cards-menu">
 					<ul>
-						<li> <a href="#">T-shirt</a> </li>
-						<li> <a href="#">Pants</a> </li>
-						<li> <a href="#">Shoe</a> </li>
-						<li> <a href="#">Jacket</a> </li>
-						<li> <a href="#">Fashion</a> </li>
+						<li> <a href="#" class="active-link">T-shirt</a> </li>
+						<li> <a href="#" class="light-links">Pants</a> </li>
+						<li> <a href="#" class="light-links">Shoe</a> </li>
+						<li> <a href="#" class="light-links">Jacket</a> </li>
+						<li> <a href="#" class="light-links">Fashion</a> </li>
 					</ul>
 				</div>
 
@@ -60,8 +58,20 @@
 
 					<div class="column">
 						<div class="cards">
-							<div class="card1 display-card card-bottom">
+							<div class="card1 card-bottom">
+								<img src="images/product_01.png" alt="hat.png">
 								<div class="item-name">Hat</div>
+								<div class="description">
+									<h3 class="card-title">Hat</h3>
+									<p class="card-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+										Enim quisquam ex quas iure mollitia reiciendis, tempora veniam dolor. 
+										Assumenda fugiat consectetur laboriosam. Nisi tempore, facilis 
+										dignissimos quia nostrum quam inventore.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique 
+										nostrum distinctio voluptatum accusantium. Cupiditate nobis quis ut eius maiores, 
+										minus fugit, quos quam, nesciunt dolorum in explicabo incidunt repellendus.
+									</p>
+								</div>
 							</div>
 						
 							<div class="details">
@@ -73,8 +83,20 @@
 
 					<div class="column">
 						<div class="cards">
-							<div class="card2 display-card card-bottom">
+							<div class="card2 card-bottom">
+								<img src="images/product_02.png" alt="hat.png">
 								<div class="item-name">Pant</div>
+								<div class="description">
+									<h3 class="card-title">Pant</h3>
+									<p class="card-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+										Enim quisquam ex quas iure mollitia reiciendis, tempora veniam dolor. 
+										Assumenda fugiat consectetur laboriosam. Nisi tempore, facilis 
+										dignissimos quia nostrum quam inventore.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique 
+										nostrum distinctio voluptatum accusantium. Cupiditate nobis quis ut eius maiores, 
+										minus fugit, quos quam, nesciunt dolorum in explicabo incidunt repellendus.
+									</p>
+								</div>
 							</div>
 
 							<div class="details">
@@ -86,8 +108,9 @@
 					
 					<div class="column">
 						<div class="cards">
-							<div class="card3 display-card card-bottom">
-								<div class="item-name item-card3">Shirt</div>
+							<div class="card3 card-bottom">
+								<img src="images/product_03.png" alt="hat.png">
+								<div class="item-name">Shirt</div>
 								<div class="description">
 									<h3 class="card-title">Shirts</h3>
 									<p class="card-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -102,8 +125,8 @@
 							</div>
 
 							<div class="details">
-								<h3>Woleen Tee</h3>
-								<p>$36.00</p>
+								<h3 class="card-title">Woleen Tee</h3>
+								<p class="card-para">$36.00</p>
 							</div>
 						</div>
 					</div>
@@ -112,7 +135,8 @@
 
 				<div class="cards-wrapper">
 					<div class="column-special">
-						<div class="card4 cards">
+						<div class="cards card4">
+							<img src="images/banner_bg_1.png" alt="hat.png">
 							<div class="card4-content">
 								<p class="special-content-para">SUMMER SALE</p>
 								<h3 class="special-content-title">UPTO 70% OFF NOW</h3>
@@ -123,7 +147,8 @@
 					</div>
 
 					<div class="column-special">
-						<div class="card5 cards">
+						<div class="cards card5">
+							<img src="images/banner_bg_2.png" alt="hat.png">
 							<div class="card5-content">
 								<p class="special-content-para">NEW COLLECTION</p>
 								<h3 class="special-content-title">TRENDING T-SHIRT</h3>
@@ -141,29 +166,28 @@
 
 					<div class="column">
 						<div class="cards">
-							<div class="card6 display-card"></div>
-
+								<img src="images/tile_img_1.png" alt="hat.png">
+							
 							<div class="details details-border">
 								<div class="info">
 									<h3 class="card-title">Denim Shell Top Ruffle</h3>
 									<p class="card-para">$36.00</p>
 								</div>
-								<div class="to-add">
 									<div class="add">
 										<span>1250</span>
 										<span>1250</span>
-										<div class="add-to-cart"><p class="old-price">ADD TO CART</p>
-											<!--<button>ADD TO CART</button>--></div>
+										<!-- <div class="add-to-cart"><p class="old-price">ADD TO CART</p> -->
+											<button class="add-to-cart">ADD TO CART</button>
 										<div class="clear"></div>
 									</div>
-								</div>
 							</div>	
 						</div>
 					</div>
 
 					<div class="column">
 						<div class="cards">
-							<div class="card7 display-card">
+							<div class="card7">
+								<img src="images/tile_img_2.png" alt="hat.png">
 								<div class="discount">-30%</div>
 							</div>
 							
@@ -173,22 +197,21 @@
 										<p class="card-para new-price">$36.00</p> 
 										<p class=" card-para new-price old-price"><del>$45.00</del></p>
 									</div>
-									<div class="to-add">
 										<div class="add">
 											<span>1250</span>
 											<span>1250</span>
-											<div class="add-to-cart"><p class="old-price">ADD TO CART</p>
-												<!--<button>ADD TO CART</button>--></div>
+											<!-- <div class="add-to-cart"><p class="old-price">ADD TO CART</p> -->
+												<button class="add-to-cart">ADD TO CART</button>
 											<div class="clear"></div>
 										</div>
-									</div>
 								</div>
 						</div>
 					</div>
 
 					<div class="column">
 						<div class="cards">
-							<div class="card8 display-card">
+							<div class="card8">
+								<img src="images/tile_img_3.png" alt="hat.png">
 								<div class="discount">SALE</div>
 							</div>
 
@@ -197,15 +220,13 @@
 									<h3 class="card-title">Asos Ridley High Waist</h3>
 									<p class="card-para">$38.00</p>
 								</div>
-								<div class="to-add">
 									<div class="add">
 										<span>1250</span>
 										<span>1250</span>
-										<div class="add-to-cart"><p class="old-price">ADD TO CART</p>
-											<!--<button>ADD TO CART</button>--></div>
+										<!-- <div class="add-to-cart"><p class="old-price">ADD TO CART</p> -->
+											<button class="add-to-cart">ADD TO CART</button>
 										<div class="clear"></div>
 									</div>
-								</div>
 								
 							</div>
 						</div>
@@ -218,27 +239,26 @@
 		</section>
 
 		<section class="newsletter">
-			<div class="container subscribe-container">
-				<img src="images/emailer_banner_img.png" alt="emailer_banner_img.png">
-				<div class="newsletter-content">
-					
-					<div class="subscribe">
-						<!-- <div class="subscribe-content"> -->
+			<div class="newsletter-wrapper">
+				<div class="container subscribe-container">
+					<img src="images/emailer_banner_img.png" alt="emailer_banner_img.png">
+					<div class="newsletter-content">
+						<div class="subscribe">
 							<p class="subs-title"><span class="subs-medium">SUBSCRIBE</span> NOW</p>
 							<p clas="subs-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusa <br>cupiditate eum sint </p>
-						<!-- </div> -->
-					</div>
+						</div>
 
-					<div class="user-email">
-						<form>
-							<input type="text" placeholder="Enter the email address" class="user-input">
-							<input type="submit" value="Subscribe" class="subs-btn">
-							<div class="clear"></div>
-						</form>
-					</div>
+						<div class="user-email">
+							<form>
+								<input type="text" placeholder="Enter the email address" class="user-input">
+								<input type="submit" value="Subscribe" class="subs-btn">
+								<div class="clear"></div>
+							</form>
+						</div>
 
+					</div>
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</section>
 
@@ -248,7 +268,9 @@
 					
 					<div class="column">
 						<div class="cards">
-							<div class="gallery-card1 gallery-card"></div>
+							<div class="gallery-card">
+								<img src="images/gallery_1.png" alt="gallery_1.png">
+							</div>
 							<div class="gallery-content">
 								<h3>Gallery: The names of the Slave</h3>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sunt quas alias error, 
@@ -262,7 +284,9 @@
 
 					<div class="column">
 						<div class="cards">
-							<div class="gallery-card2 gallery-card"></div>
+							<div class="gallery-card">
+								<img src="images/gallery_1.png" alt="gallery_1.png">
+							</div>
 							<div class="gallery-content">
 								<h3>Gallery: The names of the Slave</h3>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sunt quas alias error, 
@@ -276,7 +300,9 @@
 
 					<div class="column">
 						<div class="cards">
-							<div class="gallery-card3 gallery-card"></div>
+							<div class="gallery-card">
+								<img src="images/gallery_1.png" alt="gallery_1.png">
+							</div>
 							<div class="gallery-content">
 								<h3>Gallery: The names of the Slave</h3>
 								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sunt quas alias error, 
